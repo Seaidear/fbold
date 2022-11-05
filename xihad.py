@@ -142,12 +142,12 @@ def banner():
 	cik2=mark(wel ,style='cyan')
 	sol().print(cik2)
 	ban='''
- ________________  __      __        ᐟ © Cebong Official 
-×\_   _____/  _  \/  \    /  \     ᗒ mapendos023@gmail.com
-××|    __)/  /_\  \   \/\/   /          ᗩ IDA FARIDA
-××|     \/    |    \        /         ᕗ 085369666987
-××\___  /\____|__  /\__/\  /              ᕤ
-×     \/         \/      \/     '''
+       ᐟ © xihad
+×     ᗒ xihadyt1@gmail.com
+××         
+××        
+××             ᕤ
+×        '''
 	oi = nel(tekz(ban,justify='left',style='bold'), style='cyan')
 	cetak(nel(oi, title='[bold cyan] • DEVELOVER INFORMATION • [/bold cyan]'))
 # VALIDASI TOKEN
@@ -176,7 +176,7 @@ def login():
 def login_lagi334():
 	try:
 		banner()
-		___kontol___ = input('[|] Masukkan Cookies : ')
+		___kontol___ = input('[|] \input Cookies : ')
 		data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":___kontol___}) 
 		find_token = re.search("(EAAG\w+)", data.text)
 		ken=open(".token.txt", "w").write(find_token.group(1))
